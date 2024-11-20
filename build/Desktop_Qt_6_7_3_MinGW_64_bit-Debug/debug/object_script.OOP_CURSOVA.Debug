@@ -1,0 +1,13 @@
+debug/addoutlaydialog.o
+debug/addprofiledialog.o
+debug/analysisdialog.o
+debug/currentapiservice.o
+debug/exchangedialog.o
+debug/main.o
+debug/mainwindow.o
+debug/moc_addoutlaydialog.o
+debug/moc_addprofiledialog.o
+debug/moc_analysisdialog.o
+debug/moc_currentapiservice.o
+debug/moc_exchangedialog.o
+debug/moc_mainwindow.o

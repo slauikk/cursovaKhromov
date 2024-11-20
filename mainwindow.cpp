@@ -4,6 +4,10 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
+    , addOutlay(new AddOutlayDialog(this))
+    , addProfile(new AddProfileDialog(this))
+    , exchangeDialog(new ExchangeDialog(this))
+    , analysisDialog(new AnalysisDialog(this))
 {
     ui->setupUi(this);
     this->setWindowTitle("ZALUPA");
@@ -22,6 +26,7 @@ MainWindow::MainWindow(QWidget *parent)
     chartView->setRenderHint(QPainter::Antialiasing);
 
     ui->horizontalLayout->addWidget(chartView);
+
 }
 
 MainWindow::~MainWindow()
@@ -31,6 +36,38 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pb_addOutlay_clicked()
 {
+    addOutlay->exec();
+}
+
+
+void MainWindow::on_pb_searchOutlay_clicked()
+{
 
 }
+
+
+void MainWindow::on_pb_addProfile_clicked()
+{
+    addProfile->exec();
+}
+
+
+void MainWindow::on_pb_exchange_clicked()
+{
+    exchangeDialog->exec();
+}
+
+
+void MainWindow::on_pb_analysis_clicked()
+{
+    analysisDialog->exec();
+}
+
+
+void MainWindow::on_pb_exit_clicked()
+{
+    QApplication::exit();
+}
+
+
 
