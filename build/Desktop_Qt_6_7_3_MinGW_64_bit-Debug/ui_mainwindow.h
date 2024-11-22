@@ -156,7 +156,7 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         pb_analysis->setText(QCoreApplication::translate("MainWindow", "\320\220\320\275\320\260\320\273\321\226\320\267\320\260\321\202\320\276\321\200", nullptr));
-        pb_exit->setText(QCoreApplication::translate("MainWindow", "\320\222\320\270\320\271\321\210\320\276\320\262 \320\275\320\260\321\205\321\203\320\271", nullptr));
+        pb_exit->setText(QCoreApplication::translate("MainWindow", "\320\222\320\270\321\205\321\226\320\264", nullptr));
         pb_addProfile->setText(QCoreApplication::translate("MainWindow", "\320\224\320\276\320\264\320\260\321\202\320\270 \320\277\321\200\320\276\321\204\321\226\320\273\321\214", nullptr));
         pb_searchOutlay->setText(QCoreApplication::translate("MainWindow", "\320\250\321\203\320\272\320\260\321\202\320\270", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("MainWindow", "\320\242\320\260\320\261\320\273\320\270\321\206\321\217", nullptr));

@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
     , model(new QSqlRelationalTableModel(this))
 {
     ui->setupUi(this);
-    this->setWindowTitle("ZALUPA");
+    this->setWindowTitle("Monyfine");
     dbManager->createTables();
     setupOutlayView();
     loadProfiles();
@@ -238,16 +238,18 @@ void MainWindow::updateOutlayChart(int profileId)
 
         if (sumQuery.next()) {
             double sum = sumQuery.value(0).toDouble();
-            QString categoryName = categories.value(categoryId);
-            QPieSlice *slice = series->append(categoryName, sum);
+            if (sum > 0) { // Додаємо тільки якщо сума більше нуля
+                QString categoryName = categories.value(categoryId);
+                QPieSlice *slice = series->append(categoryName, sum);
 
-            slice->setLabel(categoryName + "\n" + QString::number(sum, 'f', 2));
-            slice->setLabelVisible(false);
+                slice->setLabel(categoryName + "\n" + QString::number(sum, 'f', 2));
+                slice->setLabelVisible(false);
 
-            // Призначаємо колір кожному сегменту
-            slice->setBrush(allColors[colorIndex]);
+                // Призначаємо колір кожному сегменту
+                slice->setBrush(allColors[colorIndex]);
 
-            colorIndex++;
+                colorIndex++;
+            }
         }
     }
 
@@ -269,4 +271,5 @@ void MainWindow::updateOutlayChart(int profileId)
 
     ui->horizontalLayout->addWidget(chartView);
 }
+
 

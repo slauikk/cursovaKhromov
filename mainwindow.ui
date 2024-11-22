@@ -25,7 +25,7 @@
     <item row="3" column="3">
      <widget class="QPushButton" name="pb_exit">
       <property name="text">
-       <string>Вийшов нахуй</string>
+       <string>Вихід</string>
       </property>
      </widget>
     </item>
