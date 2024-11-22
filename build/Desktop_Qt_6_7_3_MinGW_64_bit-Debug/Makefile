@@ -33,7 +33,7 @@ IDC           = idc
 IDL           = midl
 ZIP           = zip -r -9
 DEF_FILE      = 
-RES_FILE      = 
+RES_FILE      = OOP_CURSOVA_resource_res.o
 SED           = $(QMAKE) -install sed
 MOVE          = move
 SUBTARGETS    =  \
@@ -317,6 +317,7 @@ Makefile: ../../OOP_CURSOVA.pro ../../../../6.7.3/mingw_64/mkspecs/features/spec
 		../../../../6.7.3/mingw_64/lib/Qt6Qml.prl \
 		../../../../6.7.3/mingw_64/lib/Qt6Network.prl \
 		../../../../6.7.3/mingw_64/lib/Qt6Concurrent.prl \
+		../../../../6.7.3/mingw_64/lib/Qt6Sql.prl \
 		../../../../6.7.3/mingw_64/lib/Qt6Core.prl \
 		../../../../6.7.3/mingw_64/lib/Qt6EntryPoint.prl \
 		../../../../6.7.3/mingw_64/mkspecs/features/build_pass.prf
@@ -568,6 +569,7 @@ Makefile: ../../OOP_CURSOVA.pro ../../../../6.7.3/mingw_64/mkspecs/features/spec
 ../../../../6.7.3/mingw_64/lib/Qt6Qml.prl:
 ../../../../6.7.3/mingw_64/lib/Qt6Network.prl:
 ../../../../6.7.3/mingw_64/lib/Qt6Concurrent.prl:
+../../../../6.7.3/mingw_64/lib/Qt6Sql.prl:
 ../../../../6.7.3/mingw_64/lib/Qt6Core.prl:
 ../../../../6.7.3/mingw_64/lib/Qt6EntryPoint.prl:
 ../../../../6.7.3/mingw_64/mkspecs/features/build_pass.prf:

@@ -5,6 +5,9 @@ debug/currentapiservice.o
 debug/exchangedialog.o
 debug/main.o
 debug/mainwindow.o
+debug/outlay.o
+debug/profile.o
+debug/sqlitedbmanager.o
 debug/moc_addoutlaydialog.o
 debug/moc_addprofiledialog.o
 debug/moc_analysisdialog.o

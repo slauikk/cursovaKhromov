@@ -11,7 +11,6 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QComboBox>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QLabel>
@@ -23,9 +22,7 @@ QT_BEGIN_NAMESPACE
 class Ui_AnalysisDialog
 {
 public:
-    QComboBox *comboBox;
     QPushButton *pb_cancel;
-    QPushButton *pb_calculate;
     QWidget *layoutWidget;
     QGridLayout *gridLayout_2;
     QLabel *label_3;
@@ -46,7 +43,7 @@ public:
     QGridLayout *gridLayout_6;
     QLabel *label_11;
     QLabel *l_remainder;
-    QWidget *widget;
+    QWidget *layoutWidget1;
     QGridLayout *gridLayout;
     QLabel *label;
     QLabel *l_maxNecessarily;
@@ -56,18 +53,12 @@ public:
         if (AnalysisDialog->objectName().isEmpty())
             AnalysisDialog->setObjectName("AnalysisDialog");
         AnalysisDialog->resize(673, 413);
-        comboBox = new QComboBox(AnalysisDialog);
-        comboBox->setObjectName("comboBox");
-        comboBox->setGeometry(QRect(50, 100, 121, 28));
         pb_cancel = new QPushButton(AnalysisDialog);
         pb_cancel->setObjectName("pb_cancel");
-        pb_cancel->setGeometry(QRect(50, 230, 121, 29));
-        pb_calculate = new QPushButton(AnalysisDialog);
-        pb_calculate->setObjectName("pb_calculate");
-        pb_calculate->setGeometry(QRect(50, 170, 121, 29));
+        pb_cancel->setGeometry(QRect(70, 320, 121, 29));
         layoutWidget = new QWidget(AnalysisDialog);
         layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(380, 100, 110, 49));
+        layoutWidget->setGeometry(QRect(260, 80, 110, 49));
         gridLayout_2 = new QGridLayout(layoutWidget);
         gridLayout_2->setObjectName("gridLayout_2");
         gridLayout_2->setContentsMargins(0, 0, 0, 0);
@@ -83,7 +74,7 @@ public:
 
         layoutWidget_2 = new QWidget(AnalysisDialog);
         layoutWidget_2->setObjectName("layoutWidget_2");
-        layoutWidget_2->setGeometry(QRect(540, 100, 68, 49));
+        layoutWidget_2->setGeometry(QRect(440, 80, 68, 49));
         gridLayout_3 = new QGridLayout(layoutWidget_2);
         gridLayout_3->setObjectName("gridLayout_3");
         gridLayout_3->setContentsMargins(0, 0, 0, 0);
@@ -99,7 +90,7 @@ public:
 
         layoutWidget_3 = new QWidget(AnalysisDialog);
         layoutWidget_3->setObjectName("layoutWidget_3");
-        layoutWidget_3->setGeometry(QRect(210, 210, 141, 49));
+        layoutWidget_3->setGeometry(QRect(90, 210, 141, 49));
         gridLayout_4 = new QGridLayout(layoutWidget_3);
         gridLayout_4->setObjectName("gridLayout_4");
         gridLayout_4->setContentsMargins(0, 0, 0, 0);
@@ -115,7 +106,7 @@ public:
 
         layoutWidget_4 = new QWidget(AnalysisDialog);
         layoutWidget_4->setObjectName("layoutWidget_4");
-        layoutWidget_4->setGeometry(QRect(370, 210, 161, 49));
+        layoutWidget_4->setGeometry(QRect(260, 210, 161, 49));
         gridLayout_5 = new QGridLayout(layoutWidget_4);
         gridLayout_5->setObjectName("gridLayout_5");
         gridLayout_5->setContentsMargins(0, 0, 0, 0);
@@ -131,7 +122,7 @@ public:
 
         layoutWidget_5 = new QWidget(AnalysisDialog);
         layoutWidget_5->setObjectName("layoutWidget_5");
-        layoutWidget_5->setGeometry(QRect(550, 210, 65, 49));
+        layoutWidget_5->setGeometry(QRect(440, 210, 65, 49));
         gridLayout_6 = new QGridLayout(layoutWidget_5);
         gridLayout_6->setObjectName("gridLayout_6");
         gridLayout_6->setContentsMargins(0, 0, 0, 0);
@@ -145,18 +136,18 @@ public:
 
         gridLayout_6->addWidget(l_remainder, 1, 0, 1, 1);
 
-        widget = new QWidget(AnalysisDialog);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(200, 100, 154, 49));
-        gridLayout = new QGridLayout(widget);
+        layoutWidget1 = new QWidget(AnalysisDialog);
+        layoutWidget1->setObjectName("layoutWidget1");
+        layoutWidget1->setGeometry(QRect(90, 80, 154, 49));
+        gridLayout = new QGridLayout(layoutWidget1);
         gridLayout->setObjectName("gridLayout");
         gridLayout->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget1);
         label->setObjectName("label");
 
         gridLayout->addWidget(label, 0, 0, 1, 1);
 
-        l_maxNecessarily = new QLabel(widget);
+        l_maxNecessarily = new QLabel(layoutWidget1);
         l_maxNecessarily->setObjectName("l_maxNecessarily");
 
         gridLayout->addWidget(l_maxNecessarily, 1, 0, 1, 1);
@@ -171,7 +162,6 @@ public:
     {
         AnalysisDialog->setWindowTitle(QCoreApplication::translate("AnalysisDialog", "Dialog", nullptr));
         pb_cancel->setText(QCoreApplication::translate("AnalysisDialog", "\320\235\320\260\320\267\320\260\320\264", nullptr));
-        pb_calculate->setText(QCoreApplication::translate("AnalysisDialog", "\320\236\320\261\321\207\320\270\321\201\320\273\320\270\321\202\320\270", nullptr));
         label_3->setText(QCoreApplication::translate("AnalysisDialog", "\320\235\320\265 \320\276\320\261\320\276\320\262'\321\217\320\267\320\272\320\276\320\262\320\265", nullptr));
         l_notNecessarily->setText(QString());
         l_saving->setText(QString());

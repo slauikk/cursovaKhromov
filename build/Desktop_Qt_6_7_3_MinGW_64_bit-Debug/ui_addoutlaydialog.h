@@ -9,6 +9,7 @@
 #ifndef UI_ADDOUTLAYDIALOG_H
 #define UI_ADDOUTLAYDIALOG_H
 
+#include <QtCore/QDate>
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QComboBox>
@@ -38,8 +39,8 @@ public:
     QDateTimeEdit *dateTimeEdit;
     QLineEdit *le_amount;
     QLabel *label_2;
-    QComboBox *comboBox;
-    QLineEdit *le_title;
+    QComboBox *cb_category;
+    QLineEdit *le_name;
     QLabel *label;
     QLabel *label_3;
     QLabel *label_4;
@@ -88,6 +89,7 @@ public:
         gridLayout->setObjectName("gridLayout");
         dateTimeEdit = new QDateTimeEdit(addOutlayDialog);
         dateTimeEdit->setObjectName("dateTimeEdit");
+        dateTimeEdit->setDate(QDate(2001, 1, 1));
 
         gridLayout->addWidget(dateTimeEdit, 3, 1, 1, 1);
 
@@ -101,15 +103,15 @@ public:
 
         gridLayout->addWidget(label_2, 2, 0, 1, 1);
 
-        comboBox = new QComboBox(addOutlayDialog);
-        comboBox->setObjectName("comboBox");
+        cb_category = new QComboBox(addOutlayDialog);
+        cb_category->setObjectName("cb_category");
 
-        gridLayout->addWidget(comboBox, 1, 1, 1, 1);
+        gridLayout->addWidget(cb_category, 1, 1, 1, 1);
 
-        le_title = new QLineEdit(addOutlayDialog);
-        le_title->setObjectName("le_title");
+        le_name = new QLineEdit(addOutlayDialog);
+        le_name->setObjectName("le_name");
 
-        gridLayout->addWidget(le_title, 1, 0, 1, 1);
+        gridLayout->addWidget(le_name, 1, 0, 1, 1);
 
         label = new QLabel(addOutlayDialog);
         label->setObjectName("label");

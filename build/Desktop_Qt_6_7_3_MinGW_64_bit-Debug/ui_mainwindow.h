@@ -126,6 +126,7 @@ public:
 
         pb_addOutlay = new QPushButton(centralwidget);
         pb_addOutlay->setObjectName("pb_addOutlay");
+        pb_addOutlay->setStyleSheet(QString::fromUtf8(""));
 
         gridLayout->addWidget(pb_addOutlay, 2, 2, 1, 1);
 

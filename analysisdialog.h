@@ -2,6 +2,8 @@
 #define ANALYSISDIALOG_H
 
 #include <QDialog>
+#include <QSqlQuery>
+#include <QMessageBox>
 
 namespace Ui {
 class AnalysisDialog;
@@ -15,13 +17,16 @@ public:
     explicit AnalysisDialog(QWidget *parent = nullptr);
     ~AnalysisDialog();
 
-private slots:
-    void on_pb_calculate_clicked();
+    void setProfileId(int id);
 
+private slots:
     void on_pb_cancel_clicked();
 
 private:
     Ui::AnalysisDialog *ui;
+    int profileId;
+
+    void updateLabels();
 };
 
 #endif // ANALYSISDIALOG_H

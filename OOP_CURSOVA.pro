@@ -1,4 +1,4 @@
-QT       += core gui graphs charts network
+QT       += core gui graphs charts network sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -15,7 +15,10 @@ SOURCES += \
     currentapiservice.cpp \
     exchangedialog.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    outlay.cpp \
+    profile.cpp \
+    sqlitedbmanager.cpp
 
 HEADERS += \
     addoutlaydialog.h \
@@ -23,7 +26,10 @@ HEADERS += \
     analysisdialog.h \
     currentapiservice.h \
     exchangedialog.h \
-    mainwindow.h
+    mainwindow.h \
+    outlay.h \
+    profile.h \
+    sqlitedbmanager.h
 
 FORMS += \
     addoutlaydialog.ui \
@@ -36,3 +42,4 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+RC_ICONS = myappico.ico

@@ -13,21 +13,11 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QComboBox" name="comboBox">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>100</y>
-     <width>121</width>
-     <height>28</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QPushButton" name="pb_cancel">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>230</y>
+     <x>70</x>
+     <y>320</y>
      <width>121</width>
      <height>29</height>
     </rect>
@@ -36,24 +26,11 @@
     <string>Назад</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pb_calculate">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>170</y>
-     <width>121</width>
-     <height>29</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Обчислити</string>
-   </property>
-  </widget>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>100</y>
+     <x>260</x>
+     <y>80</y>
      <width>110</width>
      <height>49</height>
     </rect>
@@ -78,8 +55,8 @@
   <widget class="QWidget" name="layoutWidget_2">
    <property name="geometry">
     <rect>
-     <x>540</x>
-     <y>100</y>
+     <x>440</x>
+     <y>80</y>
      <width>68</width>
      <height>49</height>
     </rect>
@@ -104,7 +81,7 @@
   <widget class="QWidget" name="layoutWidget_3">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>90</x>
      <y>210</y>
      <width>141</width>
      <height>49</height>
@@ -130,7 +107,7 @@
   <widget class="QWidget" name="layoutWidget_4">
    <property name="geometry">
     <rect>
-     <x>370</x>
+     <x>260</x>
      <y>210</y>
      <width>161</width>
      <height>49</height>
@@ -156,7 +133,7 @@
   <widget class="QWidget" name="layoutWidget_5">
    <property name="geometry">
     <rect>
-     <x>550</x>
+     <x>440</x>
      <y>210</y>
      <width>65</width>
      <height>49</height>
@@ -179,11 +156,11 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>100</y>
+     <x>90</x>
+     <y>80</y>
      <width>154</width>
      <height>49</height>
     </rect>

@@ -5,6 +5,9 @@ release/currentapiservice.o
 release/exchangedialog.o
 release/main.o
 release/mainwindow.o
+release/outlay.o
+release/profile.o
+release/sqlitedbmanager.o
 release/moc_addoutlaydialog.o
 release/moc_addprofiledialog.o
 release/moc_analysisdialog.o
